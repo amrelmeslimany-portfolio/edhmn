@@ -48,14 +48,16 @@ $(function () {
     discountsSliderWrap.owlCarousel({
       animateOut: "animate__animated animate__fadeOut",
       animateIn: "animate__animated animate__fadeIn",
-      dotsSpeed: 10000,
       items: 1,
       margin: 0,
       dots: true,
       rtl: SITE_DIRECTION === "rtl" ? true : false,
       pullDrag: false,
-      freeDrag: false,
       mouseDrag: false,
+      touchDrag: false,
+      loop: false,
+      rewind: false,
+      autoHeight: true,
     });
   }
 });

@@ -24,6 +24,10 @@ const LANGUAGES = {
         النص
         العربى، حيث يمكنك أن
     `,
+    discount_text_1:
+      "  خصم 30% على اول 3 اوردرات من خلالنا يلا اطلب اوردرك الان مستنى اى !!",
+    discount_text_2: `خصم 30% على اول 3 اوردرات من خلالنا يلا اطلب اوردرك الان مستنى اى !! خصم 30% على اول 3
+  اوردرات من خلالنا يلا اطلب اوردرك الان مستنى اى !!`,
   },
 
   en: {
@@ -38,5 +42,9 @@ const LANGUAGES = {
     introparagraph_header: `
     This text is an example of a text that can be replaced in the same space. This text was generated from the Arabic text generator, where you can generate such text or many other texts in addition to increasing the number of characters it generates if you need a larger number of paragraphs that allow The Arabic text generator allows you to increase the number of paragraphs as you want, the text will not appear divided and does not contain linguistic errors, the Arabic text generator is useful for website designers in particular, where the client often needs to see a real picture of the site design. This text is an example of a text that can be replaced in the same space. This text was generated from the Arabic text generator, where you can
     `,
+    discount_text_1:
+      "30% discount on the first 3 orders through us. Let's order your order now, waiting for any!!",
+    discount_text_2: `30% discount on the first 3 orders through us. Let's order your order now, waiting for any!! 30% off the first 3
+      Order through us. Let's order your order now. Wait for any!!`,
   },
 };
