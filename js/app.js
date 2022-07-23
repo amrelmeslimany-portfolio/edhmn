@@ -2,6 +2,9 @@ $(function () {
   const languageToggler = $(".language-toggler .dropdown-menu button");
   const itemWillTranslate = $(`[data-lang]`);
   const discountsSliderWrap = $(".owl-carousel.discountslider");
+  const mainHeader = $("#main-header");
+  const mainNavbar = mainHeader.find(".navbar");
+  const offcanvas = $(".offcanvas ");
 
   const SITE_DIRECTION = $("body").css("direction");
 
@@ -60,4 +63,28 @@ $(function () {
       autoHeight: true,
     });
   }
+
+  // - navbar
+  mainNavbar.find(".navbar-toggler").click(function () {
+    if (offcanvas.hasClass("show")) {
+      mainNavbar.removeClass("blur");
+    }
+  });
+
+  offcanvas.find(".offcanvas-header .btn-close").click(function () {
+    setTimeout(() => {
+      mainNavbar.addClass("blur");
+    }, 200);
+  });
+
+  $(document).on("scroll", function () {
+    let winScroll = window.scrollY;
+    let mainHeaderHeight = mainHeader.height() - 200;
+
+    if (winScroll >= mainHeaderHeight) {
+      mainNavbar.addClass("blur");
+    } else {
+      mainNavbar.removeClass("blur");
+    }
+  });
 });
