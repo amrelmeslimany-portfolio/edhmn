@@ -64,19 +64,7 @@ $(function () {
     });
   }
 
-  // - navbar
-  mainNavbar.find(".navbar-toggler").click(function () {
-    if (offcanvas.hasClass("show")) {
-      mainNavbar.removeClass("blur");
-    }
-  });
-
-  offcanvas.find(".offcanvas-header .btn-close").click(function () {
-    setTimeout(() => {
-      mainNavbar.addClass("blur");
-    }, 200);
-  });
-
+  // - navbar , Add blur when scrolling
   $(document).on("scroll", function () {
     let winScroll = window.scrollY;
     let mainHeaderHeight = mainHeader.height() - 200;
