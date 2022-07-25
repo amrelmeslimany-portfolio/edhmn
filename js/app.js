@@ -10,7 +10,7 @@ $(function () {
   const SITE_DIRECTION = $("body").css("direction");
 
   // Plugins
-  AOS.init({ once: true, offset: 450 });
+  AOS.init({ once: true });
   // Global settings
 
   /* 
