@@ -7,6 +7,8 @@ const LANGUAGES = {
     features_link: "مميزاتنا",
     contactus_link: "تواصل معنا",
     signasrest_link: "سجل كمطعم",
+    offcanvas_header_title: "القائمة",
+
     introtitle_header: `مرحبا بكم في
         تطبيق <strong>اضمن</strong>`,
     introparagraph_header: `
@@ -73,6 +75,7 @@ const LANGUAGES = {
     features_link: "Features",
     contactus_link: "Contact Us",
     signasrest_link: "Sign As Resturant",
+    offcanvas_header_title: "Menu",
     introtitle_header: `Welcome to the application of <strong>EDHMN</strong>`,
     introparagraph_header: `
     This text is an example of a text that can be replaced in the same space. This text was generated from the Arabic text generator, where you can generate such text or many other texts in addition to increasing the number of characters it generates if you need a larger number of paragraphs that allow The Arabic text generator allows you to increase the number of paragraphs as you want, the text will not appear divided and does not contain linguistic errors, the Arabic text generator is useful for website designers in particular, where the client often needs to see a real picture of the site design. This text is an example of a text that can be replaced in the same space. This text was generated from the Arabic text generator, where you can
