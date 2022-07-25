@@ -1,10 +1,11 @@
 $(function () {
+  const bootstrapFileLink = $("#bootstrapLink");
+  const stylesheetFileLink = $("#stylefileLink");
   const languageToggler = $(".language-toggler .dropdown-menu button");
   const itemWillTranslate = $(`[data-lang]`);
   const discountsSliderWrap = $(".owl-carousel.discountslider");
   const mainHeader = $("#main-header");
   const mainNavbar = mainHeader.find(".navbar");
-  const offcanvas = $(".offcanvas ");
 
   const SITE_DIRECTION = $("body").css("direction");
 
@@ -29,7 +30,11 @@ $(function () {
             itemWillTranslate.each(function () {
               let itemName = $(this).data("lang").trim();
 
-              $(this).html(langData[itemName]);
+              if ($(this).is("input") || $(this).is("textarea")) {
+                $(this).attr("placeholder", langData[itemName]);
+              } else {
+                $(this).html(langData[itemName]);
+              }
             });
           }
         }
@@ -39,8 +44,12 @@ $(function () {
       $(this).addClass("active");
 
       if (langType == "ar") {
+        bootstrapFileLink.attr("href", "../css/bootstrap.rtl.css");
+        stylesheetFileLink.attr("href", "../css/style.rtl.css");
         dropdownToggler.html("عربي");
       } else {
+        bootstrapFileLink.attr("href", "../css/bootstrap.css");
+        stylesheetFileLink.attr("href", "../css/style.css");
         dropdownToggler.html("English");
       }
     });
@@ -65,6 +74,7 @@ $(function () {
   }
 
   // - navbar , Add blur when scrolling
+  mainHeader.css("padding-top", mainNavbar.innerHeight() + "px");
   $(document).on("scroll", function () {
     let winScroll = window.scrollY;
     let mainHeaderHeight = mainHeader.height() - 200;

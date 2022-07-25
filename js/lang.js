@@ -50,6 +50,19 @@ const LANGUAGES = {
     feature_3:
       "يمكنك استلام اوردرك من المطعم بنفسك او يمكنك حجز طاولة في المطعم",
     feature_4: "سهولة الدفع , كما يمكنك الاطلاع على تفغاصيل الطلب من طلباتى",
+    contactus_title: "تواصل معنا",
+    maplinks_title: "روابط سريعة",
+    input_username: "الاسم بالكامل",
+    input_email: "البريد الالكتروني",
+    input_message: "الرسالة",
+    contactus_button: "ارسال",
+    topfooter_pargraph: ` هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من
+    مولد النص
+    إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات
+    كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي
+    المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من`,
+    address: "     السعودية , مكة , شارع احمد على",
+    bottomfooter_text: "جميع الحقوق محفوظة لمنصة اضمن تنفيذ شكرة المطورين",
   },
 
   en: {
@@ -80,5 +93,19 @@ const LANGUAGES = {
       "You can receive your order from the restaurant yourself, or you can reserve a table in the restaurant",
     feature_4:
       "Ease of payment, and you can view the order details from my requests",
+    contactus_title: "Contact Us",
+    input_username: "Your Name",
+    input_email: "Your Email",
+    input_message: "Your Message",
+    contactus_button: "Send",
+    maplinks_title: "Shortcut Links",
+    topfooter_pargraph: `This text is an example of text that can be replaced in the same space. This text was generated from
+      text generator
+      If you need a larger number of paragraphs, the Arabic text generator allows you to increase the number of paragraphs
+      As you want, the text will not appear divided and does not contain language errors, the Arabic text generator is useful for designers
+      Sites in particular, where the customer needs many`,
+    address: "Saudi Arabia, Mecca, Ahmed Ali Street",
+    bottomfooter_text:
+      "All rights reserved to the platform, guarantee the implementation of the developers",
   },
 };

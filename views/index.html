@@ -20,8 +20,8 @@
     <link rel="stylesheet" href="../css/libs/aos.css">
     <link rel="stylesheet" href="../css/libs/owl.carousel.css">
     <!-- Style -->
-    <link rel="stylesheet" href="../css/bootstrap.rtl.css">
-    <link rel="stylesheet" href="../css/style.rtl.css">
+    <link rel="stylesheet" id="bootstrapLink" href="../css/bootstrap.rtl.css">
+    <link rel="stylesheet" id="stylefileLink" href="../css/style.rtl.css">
 </head>
 
 <body>
@@ -39,6 +39,10 @@
                 alt="header">
             <img src="../assets/img/global/svgheadMobile.svg" draggable="false" class="d-md-none header__img"
                 alt="header">
+
+            <img src="../assets/img/SVGs/greencirle.svg" class="circle__svg green" alt="circle" draggable="false">
+            <img src="../assets/img/SVGs/opacityYellowCircle.svg" class="circle__svg yellow" alt="circle"
+                draggable="false">
 
 
             <nav class="navbar navbar-expand-lg bg-black bg-opacity-50 fixed-top">
@@ -147,38 +151,47 @@
         <main>
             <div class="container">
                 <!-- Slider -->
-                <div class="owl-carousel position-relative py-5 discountslider">
-                    <article class="position-relative discount__item">
-                        <h3 class="display-5 item__text" data-lang="discount_text_1">
-                            خصم 30% على اول 3 اوردرات من خلالنا يلا اطلب اوردرك الان مستنى اى !!
-                        </h3>
-                        <img src="../assets/img/slider/meat-burger-with-french-fries.jpg" draggable="false"
-                            class="item__img" alt="برجر عرض">
-                    </article>
-                    <article class="position-relative discount__item">
-                        <h3 class="display-5 item__text" data-lang="discount_text_2">
-                            خصم 30% على اول 3 اوردرات من خلالنا يلا اطلب اوردرك الان مستنى اى !! خصم 30% على اول 3
-                            اوردرات من خلالنا يلا اطلب اوردرك الان مستنى اى !!
-                        </h3>
-                        <img src="../assets/img/slider/meat-burger-with-french-fries.jpg" draggable="false"
-                            class="item__img" alt="برجر عرض">
-                    </article>
-                    <article class="position-relative discount__item">
-                        <h3 class="display-5 item__text" data-lang="discount_text_1">
-                            خصم 30% على اول 3 اوردرات من خلالنا يلا اطلب اوردرك الان مستنى اى !!
-                        </h3>
-                        <img src="../assets/img/slider/meat-burger-with-french-fries.jpg" draggable="false"
-                            class="item__img" alt="برجر عرض">
-                    </article>
-                    <article class="position-relative discount__item">
-                        <h3 class="display-5 item__text" data-lang="discount_text_2">
-                            خصم 30% على اول 3 اوردرات من خلالنا يلا اطلب اوردرك الان مستنى اى !! خصم 30% على اول 3
-                            اوردرات من خلالنا يلا اطلب اوردرك الان مستنى اى !!
-                        </h3>
-                        <img src="../assets/img/slider/meat-burger-with-french-fries.jpg" draggable="false"
-                            class="item__img" alt="برجر عرض">
-                    </article>
+                <div class="position-relative wrap-slider">
+                    <img src="../assets/img/SVGs/borderdOpacityGreenCr.svg" draggable="false" class="svg__circle green"
+                        alt="circle">
+                    <img src="../assets/img/SVGs/borderdOpacityOrangeCr.svg" draggable="false"
+                        class="svg__circle orange" alt="circle">
+
+                    <div class="owl-carousel position-relative py-5 discountslider">
+                        <article class="position-relative discount__item">
+                            <h3 class="display-5 me-auto item__text" data-lang="discount_text_1">
+                                خصم 30% على اول 3 اوردرات من خلالنا يلا اطلب اوردرك الان مستنى اى !!
+                            </h3>
+                            <img src="../assets/img/slider/meat-burger-with-french-fries.jpg" draggable="false"
+                                class="item__img" alt="برجر عرض">
+                        </article>
+                        <article class="position-relative discount__item">
+                            <h3 class="display-5 me-auto item__text" data-lang="discount_text_2">
+                                خصم 30% على اول 3 اوردرات من خلالنا يلا اطلب اوردرك الان مستنى اى !! خصم 30% على اول 3
+                                اوردرات من خلالنا يلا اطلب اوردرك الان مستنى اى !!
+                            </h3>
+                            <img src="../assets/img/slider/meat-burger-with-french-fries.jpg" draggable="false"
+                                class="item__img" alt="برجر عرض">
+                        </article>
+                        <article class="position-relative discount__item">
+                            <h3 class="display-5 me-auto item__text" data-lang="discount_text_1">
+                                خصم 30% على اول 3 اوردرات من خلالنا يلا اطلب اوردرك الان مستنى اى !!
+                            </h3>
+                            <img src="../assets/img/slider/meat-burger-with-french-fries.jpg" draggable="false"
+                                class="item__img" alt="برجر عرض">
+                        </article>
+                        <article class="position-relative discount__item">
+                            <h3 class="display-5 me-auto item__text" data-lang="discount_text_2">
+                                خصم 30% على اول 3 اوردرات من خلالنا يلا اطلب اوردرك الان مستنى اى !! خصم 30% على اول 3
+                                اوردرات من خلالنا يلا اطلب اوردرك الان مستنى اى !!
+                            </h3>
+                            <img src="../assets/img/slider/meat-burger-with-french-fries.jpg" draggable="false"
+                                class="item__img" alt="برجر عرض">
+                        </article>
+
+                    </div>
                 </div>
+
 
                 <!-- About Us -->
                 <div id="aboutus-section" class="py-5">
@@ -188,7 +201,9 @@
                                 class="img-fluid">
                         </div>
                         <div class="col-xxl-5">
-                            <article class="mx-auto text__box">
+                            <article class="mx-auto position-relative text__box">
+                                <img src="../assets/img/SVGs/groupCirOranges.svg" draggable="false" alt="circles"
+                                    class="svg__circles">
                                 <h3 class="h2 mb-3 fw-ar-bold about__title" data-lang="aboutus_title">من نحن</h3>
                                 <p class="lead fs-4 mb-0" data-lang="aboutus_paragraph">
                                     هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من
@@ -233,6 +248,8 @@
                                 </div>
                             </div>
 
+                            <img src="../assets/img/SVGs/groupGreenCir.svg" alt="circles" draggable="false"
+                                class="circle__svg">
                             <img draggable="false" src="../assets/img/features/yelloCircles.svg"
                                 class="img-fluid circle" alt="yellow دوائر ملونه">
                         </div>
@@ -297,7 +314,8 @@
                                     <img src="../assets/img/features/vegetables.jpg" alt="برجر ملون , ايس كريم">
                                 </div>
                             </div>
-
+                            <img src="../assets/img/SVGs/borderGrOrangeCr.svg" alt="orange" draggable="false"
+                                class="gr__svg">
                         </div>
                         <div class="col-xl-3 col-md-5 align-self-md-center text-md-start text-center">
                             <span class="feature__number">
@@ -311,23 +329,31 @@
                 </section>
 
                 <!-- Contact Us -->
-                <section id="contactus-section" class="py-5">
+                <section id="contactus-section" class="py-5 position-relative">
+                    <img src="../assets/img/SVGs/primaryBrCr.svg" alt="دائره" draggable="false"
+                        class="svg__circle primary">
+                    <img src="../assets/img/SVGs/groupOrangeSolid.svg" alt="دائره" draggable="false"
+                        class="svg__circle orange">
                     <article class="text-center">
                         <h3 class="h2 mb-4 fw-ar-bold contactus__title" data-lang="contactus_title">تواصل معنا</h3>
                     </article>
 
                     <form class="mx-auto contact__form">
                         <div class="mb-3">
-                            <input type="text" class="form-control  p-3" placeholder="الاسم بالكامل">
+                            <input type="text" class="form-control  p-3" data-lang="input_username"
+                                placeholder="الاسم بالكامل">
                         </div>
                         <div class="mb-3">
-                            <input type="email" class="form-control  p-3" placeholder="البريد الالكتروني">
+                            <input type="email" class="form-control  p-3" data-lang="input_email"
+                                placeholder="البريد الالكتروني">
                         </div>
                         <div class="mb-3">
-                            <textarea class="form-control py-3" placeholder="الرسالة"></textarea>
+                            <textarea class="form-control py-3" data-lang="input_message"
+                                placeholder="الرسالة"></textarea>
                         </div>
                         <div class="mt-4 text-center">
-                            <button type="submit" class="btn btn-primary rounded-3 py-2 submit__button">ارسال</button>
+                            <button type="submit" class="btn btn-primary rounded-3 py-2 submit__button"
+                                data-lang="contactus_button">ارسال</button>
                         </div>
                     </form>
                 </section>
@@ -342,7 +368,7 @@
                     <div class="row g-4">
                         <div class="col-xl-6 col-md-12">
                             <div class="d-flex gap-3 flex-sm-row flex-column">
-                                <div>
+                                <div class="topfooter__logo">
                                     <img src="../assets/img/global/logoBig.png" alt="اضمن شعار كبير فوتر">
                                 </div>
                                 <article>
@@ -363,20 +389,21 @@
                                     <div class="col-5">
                                         <ul class="nav flex-column">
                                             <li class="nav-item py-2">
-                                                <a class="nav-link px-0" href="#">الرئيسية</a>
+                                                <a class="nav-link px-0" href="#" data-lang="home_link">الرئيسية</a>
                                             </li>
                                             <li class="nav-item py-2">
-                                                <a class="nav-link px-0" href="#">مميزاتنا</a>
+                                                <a class="nav-link px-0" href="#" data-lang="features_link">مميزاتنا</a>
                                             </li>
                                         </ul>
                                     </div>
                                     <div class="col">
                                         <ul class="nav flex-column">
                                             <li class="nav-item py-2">
-                                                <a class="nav-link px-0 " href="#">من نحن</a>
+                                                <a class="nav-link px-0 " href="#" data-lang="weare_link">من نحن</a>
                                             </li>
                                             <li class="nav-item py-2">
-                                                <a class="nav-link px-0" href="#">تواصل معنا</a>
+                                                <a class="nav-link px-0" href="#" data-lang="contactus_link">تواصل
+                                                    معنا</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -385,13 +412,13 @@
                         </div>
                         <div class="col-xl-3 col-md-6">
                             <section class="contactussec__footer">
-                                <h4 class="h3 fw-ar-bold mb-3" data-lang="contactus_footer_title">تواصل معنا</h4>
+                                <h4 class="h3 fw-ar-bold mb-3" data-lang="contactus_title">تواصل معنا</h4>
 
                                 <ul class="nav flex-column">
                                     <li class="nav-item">
                                         <a class="nav-link px-0 " href="#">
-                                            <i class="fas fa-location-dot me-1"></i>
-                                            <span>
+                                            <i class="fas fa-location-dot me-2"></i>
+                                            <span data-lang="address">
                                                 السعودية , مكة , شارع احمد على
                                             </span>
                                         </a>
