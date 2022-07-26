@@ -63,6 +63,22 @@ const LANGUAGES = {
     address: "     السعودية , مكة , شارع احمد على",
     bottomfooter_text:
       "جميع الحقوق محفوظة لمنصة <strong>اضمن</strong> تنفيذ شركة ",
+    /* Basics Form Page */
+    basic_alert: "احصل على عملاء اكثر من خلالنا",
+    progress_1: "المعلومات الاساسية",
+    progress_2: "معلومات الشركة",
+    progress_3: "بيانات الشركة",
+    input_storenameinenglish: "اسم المتجر باللغة الانجليزية",
+    input_storenameinarabic: "اسم المتجر باللغة العربية",
+    select_activetype: "نوع النشاط",
+    select_activetype_1: "الكترونيات",
+    formsocial_subtitle_1: " حسابات التواصل الاجتماعى",
+    input_instaurl: "رابط انستجرام",
+    input_twitterurl: "رابط تويتر",
+    formsocial_subtitle_2: "الموقع",
+    input_googlemapurl: "رابط خرائط جوجل",
+    input_area: "المنطقة",
+    nextsubmit_button: "التالى",
   },
 
   en: {
@@ -108,5 +124,21 @@ const LANGUAGES = {
     address: "Saudi Arabia, Mecca, Ahmed Ali Street",
     bottomfooter_text:
       "All rights reserved to the platform of <strong>EDHMN</strong> implementation of the company",
+    /* Basics Form Page */
+    basic_alert: "Get more clients with us",
+    progress_1: "Basic INFO",
+    progress_2: "Company INFO",
+    progress_3: "Company data",
+    input_storenameinenglish: "Store name by English",
+    input_storenameinarabic: "Store name by Arabic",
+    select_activetype: "Activity type",
+    select_activetype_1: "electronics",
+    formsocial_subtitle_1: "Social Media Accounts",
+    input_instaurl: "Instagram URL",
+    input_twitterurl: "Twitter URL",
+    formsocial_subtitle_2: "Location",
+    input_googlemapurl: "Google maps URL",
+    input_area: "Area",
+    nextsubmit_button: "Next",
   },
 };
