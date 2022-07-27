@@ -79,6 +79,21 @@ const LANGUAGES = {
     input_googlemapurl: "رابط خرائط جوجل",
     input_area: "المنطقة",
     nextsubmit_button: "التالى",
+    /* Company INFO */
+    input_companynameenglish: "اسم الشركة الرسمى باللغة الانجليزية",
+    input_ibiannumber: "رقم الابيان",
+    input_managernumber: "رقم المدير",
+    input_workingmangernumber: "رقم مسؤل التشغيل",
+    input_shopnumber: "رقم تليفون المحل",
+
+    /* Company Data */
+    formalpapers_title: "الأوراق الرسمية",
+    paper_1: "رقم السجل التجارى او معروف",
+    paper_2: "رقم الشهادة الضريبية",
+    paper_3: "ممثل الشركة في السجل التجارى او المفوض بالتوقيع",
+    upload_text: `اضغط هنا او قم برمى الملف في
+    هذا الحقل`,
+    lastsubmit_button: "سجل معنا",
   },
 
   en: {
@@ -140,5 +155,20 @@ const LANGUAGES = {
     input_googlemapurl: "Google maps URL",
     input_area: "Area",
     nextsubmit_button: "Next",
+    /* Company INFO */
+    input_companynameenglish: "Official name of the company in English",
+    input_ibiannumber: "IBAN number",
+    input_managernumber: "Manager number",
+    input_workingmangernumber: "Operator number",
+    input_shopnumber: "Shop phone number",
+
+    /* Company Data */
+    formalpapers_title: "Formal Docs",
+    paper_1: "Commercial registration number or known",
+    paper_2: "Tax certificate number",
+    paper_3:
+      "Company representative in the commercial registry or authorized signatory",
+    upload_text: `Click here , or drag file`,
+    lastsubmit_button: "Sign With Us",
   },
 };

@@ -7,10 +7,60 @@ $(function () {
   const mainHeader = $("#main-header");
   const mainNavbar = mainHeader.find(".navbar");
 
+  /* Company Data Form page */
+  const fileUploadsInputOne = $("#companydata-section #file1");
+  const fileUploadsInputTwo = $("#companydata-section #file2");
+  const fileUploadsInputThree = $("#companydata-section #file3");
+
   const SITE_DIRECTION = $("body").css("direction");
 
   // Plugins
   AOS.init({ once: true });
+  // Dropzone at Company data form page
+  // Handle File Uploads
+  if (
+    fileUploadsInputOne.length ||
+    fileUploadsInputTwo.length ||
+    fileUploadsInputThree.length
+  ) {
+    const fileuploadOptions = (url = "papers", paramName) => {
+      return {
+        url: url,
+        uploadMultiple: false,
+        maxFiles: 1,
+        addRemoveLinks: true,
+        paramName: paramName,
+        parallelUploads: 1,
+        autoProcessQueue: false,
+        previewTemplate: $(".dropzone-preview").html(),
+        sending: (file) => {
+          console.log(file);
+        },
+      };
+    };
+    const serverFilesUploadedURL = "papers";
+
+    const papersDropzone1 = new Dropzone(
+      fileUploadsInputOne.get(0),
+      fileuploadOptions(serverFilesUploadedURL, "paper1")
+    );
+    const papersDropzone2 = new Dropzone(
+      fileUploadsInputTwo.get(0),
+      fileuploadOptions(serverFilesUploadedURL, "paper2")
+    );
+    const papersDropzone3 = new Dropzone(
+      fileUploadsInputThree.get(0),
+      fileuploadOptions(serverFilesUploadedURL, "paper3")
+    );
+
+    $("#papers__form").on("submit", (event) => {
+      event.preventDefault();
+      papersDropzone1.processQueue();
+      papersDropzone2.processQueue();
+      papersDropzone3.processQueue();
+    });
+  }
+
   // Global settings
 
   /* 
@@ -46,10 +96,12 @@ $(function () {
       $(this).addClass("active");
 
       if (langType == "ar") {
+        document.body.lang = "ar";
         bootstrapFileLink.attr("href", "../css/bootstrap.rtl.css");
         stylesheetFileLink.attr("href", "../css/style.rtl.css");
         dropdownToggler.html("عربي");
       } else {
+        document.body.lang = "en";
         bootstrapFileLink.attr("href", "../css/bootstrap.css");
         stylesheetFileLink.attr("href", "../css/style.css");
         dropdownToggler.html("English");

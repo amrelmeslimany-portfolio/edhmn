@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EDHMN - المعلومات الأساسية</title>
+    <title>EDHMN - معلومات الشركة</title>
     <meta name="description" content="EDHMN" />
     <meta name="keywords" content="EDHMN">
     <meta name="theme-color" content="#3B787D">
@@ -107,7 +107,7 @@
                             <span class="number">1</span>
                             <span class="text" data-lang="progress_1"> المعلومات الاساسية</span>
                         </a>
-                        <a class="nav-link " href="#">
+                        <a class="nav-link active" href="#">
                             <span class="number">2</span>
                             <span class="text" data-lang="progress_2">معلومات الشركة</span>
                         </a>
@@ -139,48 +139,40 @@
                 <section id="basicsinfo-section" class="py-5 position-relative form-style">
 
                     <article class="text-center">
-                        <h3 class=" mb-4 fw-ar-bold basicsinfo__title" data-lang="progress_1">المعلومات الاساسية
+                        <h3 class=" mb-4 fw-ar-bold basicsinfo__title" data-lang="progress_2">معلومات الشركة
                         </h3>
                     </article>
 
                     <form class="mx-auto contact__form">
                         <div class="mb-3">
-                            <input type="text" class="form-control  p-3" data-lang="input_storenameinenglish"
-                                placeholder="اسم المتجر باللغة الانجليزية">
+                            <input type="text" class="form-control  p-3 is-invalid" data-lang="input_companynameenglish"
+                                placeholder="اسم الشركة الرسمى باللغة الانجليزية">
+                            <div class="invalid-feedback mt-2 ms-1">
+                                هكذا سيكون شكل الايرور
+                            </div>
                         </div>
                         <div class="mb-3">
-                            <input type="text" class="form-control  p-3" data-lang="input_storenameinarabic"
-                                placeholder="اسم المتجر باللغة العربية">
+                            <input type="email" class="form-control  p-3" data-lang="input_email"
+                                placeholder="البريد الالكترونى">
                         </div>
                         <div class="mb-3">
-                            <select class="form-select p-3">
-                                <option value="" data-lang="select_activetype">نوع النشاط</option>
-                                <option value="elec" data-lang="select_activetype_1">الكترونيات</option>
-                            </select>
-                        </div>
-                        <article class="mb-3">
-                            <h4 class="form_subtitle" data-lang="formsocial_subtitle_1">حسابات التواصل الاجتماعى</h4>
-                        </article>
-                        <div class="mb-3">
-                            <input type="url" class="form-control  p-3" data-lang="input_instaurl"
-                                placeholder="رابط انستجرام">
+                            <input type="text" class="form-control  p-3" data-lang="input_ibiannumber"
+                                placeholder="رقم الايبان">
                         </div>
                         <div class="mb-3">
-                            <input type="url" class="form-control  p-3" data-lang="input_twitterurl"
-                                placeholder="رابط تويتر">
+                            <input type="text" class="form-control  p-3" data-lang="input_managernumber"
+                                placeholder="رقم المدير">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control  p-3" data-lang="input_workingmangernumber"
+                                placeholder="رقم مسؤل التشغيل">
                         </div>
 
-                        <article class="mb-3">
-                            <h4 class="form_subtitle" data-lang="formsocial_subtitle_2">الموقع</h4>
-                        </article>
+                        <div class="mb-3">
+                            <input type="text" class="form-control  p-3" data-lang="input_shopnumber"
+                                placeholder="رقم تليفون المحل">
+                        </div>
 
-                        <div class="mb-3">
-                            <input type="url" class="form-control  p-3" data-lang="input_googlemapurl"
-                                placeholder="رابط خرائط جوجل">
-                        </div>
-                        <div class="mb-3">
-                            <input type="url" class="form-control  p-3" data-lang="input_area" placeholder="المنطقة">
-                        </div>
 
                         <div class="mt-4 text-center">
                             <!--
@@ -193,7 +185,7 @@
                             <button type="submit" class="btn btn-primary rounded-3 py-2 submit__button"
                                 data-lang="nextsubmit_button">التالى</button> 
                             -->
-                            <a href="company-info-form.html" class="btn btn-primary rounded-3 py-2 submit__button"
+                            <a href="company-data-form.html" class="btn btn-primary rounded-3 py-2 submit__button"
                                 data-lang="nextsubmit_button">التالى</a>
 
                         </div>
