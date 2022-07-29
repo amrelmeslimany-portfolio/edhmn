@@ -19,6 +19,7 @@ $(function () {
   // Plugins
   AOS.init({ once: true });
 
+  // Form Wizard
   if (signFormWrap.length) {
     const formWizordOption = {
       selected: 0,
@@ -68,8 +69,11 @@ $(function () {
       }
     );
   }
+
+  // Dropzone section or files upload section
   // Dropzone at Company data form page
   // Handle File Uploads
+  // Here also , Form Submbit function
   if (
     fileUploadsInputOne.length ||
     fileUploadsInputTwo.length ||
@@ -110,8 +114,11 @@ $(function () {
       papersDropzone1.processQueue();
       papersDropzone2.processQueue();
       papersDropzone3.processQueue();
-
-      console.log("Form Submitted ");
+      // alert
+      alert(
+        "Form Submitted from 'Dropzone section or files upload section' at App.js file after form wizard section"
+      );
+      console.log("Form Submitted after files uploaded");
     });
   }
 
