@@ -2,6 +2,8 @@ const LANGUAGES = {
   ar: {
     arbtn_langtoggler: "الغة العربيه",
     enbtn_langtoggler: "الغة الانجليزيه",
+    img_navbar_logo: "../assets/img/global/ar-logo.png",
+    img_big_footer_logo: "../assets/img/global/ar-logoBig.png",
     home_link: "الرئيسية",
     weare_link: "من نحن",
     features_link: "مميزاتنا",
@@ -99,6 +101,8 @@ const LANGUAGES = {
   en: {
     arbtn_langtoggler: "Arabic",
     enbtn_langtoggler: "English",
+    img_navbar_logo: "../assets/img/global/logo.png",
+    img_big_footer_logo: "../assets/img/global/logoBig.png",
     home_link: "Home",
     weare_link: "About Us",
     features_link: "Features",

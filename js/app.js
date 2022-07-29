@@ -1,21 +1,73 @@
 $(function () {
+  const mainLoader = $("#main__loader");
   const bootstrapFileLink = $("#bootstrapLink");
   const stylesheetFileLink = $("#stylefileLink");
   const languageToggler = $(".language-toggler .dropdown-menu button");
-  const itemWillTranslate = $(`[data-lang]`);
+
   const discountsSliderWrap = $(".owl-carousel.discountslider");
   const mainHeader = $("#main-header");
   const mainNavbar = mainHeader.find(".navbar");
 
   /* Company Data Form page */
-  const fileUploadsInputOne = $("#companydata-section #file1");
-  const fileUploadsInputTwo = $("#companydata-section #file2");
-  const fileUploadsInputThree = $("#companydata-section #file3");
+  const signFormWrap = $("#signasrestrant");
+  const fileUploadsInputOne = $("#step-3 #file1");
+  const fileUploadsInputTwo = $("#step-3 #file2");
+  const fileUploadsInputThree = $("#step-3 #file3");
 
-  const SITE_DIRECTION = $("body").css("direction");
+  let SITE_DIRECTION = $("body").css("direction");
 
   // Plugins
   AOS.init({ once: true });
+
+  if (signFormWrap.length) {
+    const formWizordOption = {
+      selected: 0,
+      autoAdjustHeight: false,
+      enableFinishButton: true,
+      onFinish: () => {
+        console.log("love");
+      },
+      lang: {
+        next: "التالى",
+      },
+      toolbar: {
+        showPreviousButton: false,
+        extraHtml: `<button type="submit" class="btn btn-primary rounded-3 py-2 d-none submit__button "
+        data-lang="lastsubmit_button">سجل معنا</button>`,
+      },
+      anchor: {
+        enableNavigation: true,
+      },
+      keyboard: {
+        keyNavigation: false,
+      },
+      style: {
+        btnNextCss: "btn btn-primary rounded-3 py-2 next__button",
+        toolbarCss: "text-center mt-4",
+      },
+    };
+    signFormWrap.smartWizard(formWizordOption);
+
+    const nextButton = $(".next__button");
+    const submitButton = $(".submit__button");
+
+    signFormWrap.on("loaded", function () {
+      nextButton.attr("data-lang", "nextsubmit_button");
+    });
+
+    signFormWrap.on(
+      "showStep",
+      (e, anchorObject, stepIndex, stepDirection, stepPosition) => {
+        if (stepPosition == "last") {
+          submitButton.removeClass("d-none");
+          nextButton.addClass("d-none");
+        } else {
+          submitButton.addClass("d-none");
+          nextButton.removeClass("d-none");
+        }
+      }
+    );
+  }
   // Dropzone at Company data form page
   // Handle File Uploads
   if (
@@ -53,11 +105,13 @@ $(function () {
       fileuploadOptions(serverFilesUploadedURL, "paper3")
     );
 
-    $("#papers__form").on("submit", (event) => {
+    signFormWrap.on("submit", (event) => {
       event.preventDefault();
       papersDropzone1.processQueue();
       papersDropzone2.processQueue();
       papersDropzone3.processQueue();
+
+      console.log("Form Submitted ");
     });
   }
 
@@ -75,6 +129,8 @@ $(function () {
       let dropdownToggler = $(".language-toggler .dropdown-toggle");
 
       if (!$(this).hasClass("active")) {
+        mainLoader.show(10);
+        const itemWillTranslate = $(`[data-lang]`);
         if (Boolean(LANGUAGES[langType])) {
           let langData = LANGUAGES[langType];
 
@@ -84,6 +140,8 @@ $(function () {
 
               if ($(this).is("input") || $(this).is("textarea")) {
                 $(this).attr("placeholder", langData[itemName]);
+              } else if ($(this).is("img")) {
+                $(this).attr("src", langData[itemName]);
               } else {
                 $(this).html(langData[itemName]);
               }
@@ -96,16 +154,20 @@ $(function () {
       $(this).addClass("active");
 
       if (langType == "ar") {
+        SITE_DIRECTION = "rtl";
         document.body.lang = "ar";
         bootstrapFileLink.attr("href", "../css/bootstrap.rtl.css");
         stylesheetFileLink.attr("href", "../css/style.rtl.css");
         dropdownToggler.html("عربي");
       } else {
+        SITE_DIRECTION = "ltr";
         document.body.lang = "en";
         bootstrapFileLink.attr("href", "../css/bootstrap.css");
         stylesheetFileLink.attr("href", "../css/style.css");
         dropdownToggler.html("English");
       }
+
+      mainLoader.hide(100);
     });
   });
 
@@ -139,4 +201,7 @@ $(function () {
       mainNavbar.removeClass("blur");
     }
   });
+
+  // Remove The Loading
+  mainLoader.hide(100);
 });
