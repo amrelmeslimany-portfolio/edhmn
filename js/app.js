@@ -70,10 +70,10 @@ $(function () {
     );
   }
 
-  // Dropzone section or files upload section
-  // Dropzone at Company data form page
-  // Handle File Uploads
-  // Here also , Form Submbit function
+  /* Dropzone section or files upload section
+   Dropzone at Company data form page
+   Handle File Uploads
+   Here also , Form Submbit function */
   if (
     fileUploadsInputOne.length ||
     fileUploadsInputTwo.length ||
@@ -178,7 +178,7 @@ $(function () {
     });
   });
 
-  // - Init Carousel
+  // - Init Carousel Discount
   if (discountsSliderWrap.length) {
     discountsSliderWrap.owlCarousel({
       animateOut: "animate__animated animate__fadeOut",
@@ -193,6 +193,7 @@ $(function () {
       loop: false,
       rewind: false,
       autoHeight: true,
+      autoplay: true,
     });
   }
 
