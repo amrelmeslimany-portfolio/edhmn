@@ -163,13 +163,13 @@ $(function () {
       if (langType == "ar") {
         SITE_DIRECTION = "rtl";
         document.body.lang = "ar";
-        bootstrapFileLink.attr("href", "../css/bootstrap.rtl.css");
+        bootstrapFileLink.attr("href", "../css/libs/bootstrap.rtl.css");
         stylesheetFileLink.attr("href", "../css/style.rtl.css");
         dropdownToggler.html("عربي");
       } else {
         SITE_DIRECTION = "ltr";
         document.body.lang = "en";
-        bootstrapFileLink.attr("href", "../css/bootstrap.css");
+        bootstrapFileLink.attr("href", "../css/libs/bootstrap.css");
         stylesheetFileLink.attr("href", "../css/style.css");
         dropdownToggler.html("English");
       }
